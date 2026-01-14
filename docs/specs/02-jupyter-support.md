@@ -22,13 +22,11 @@ rlm = RLM(
     backend="openai",
     backend_kwargs={"model_name": "gpt-5"},
     environment="jupyter",
-    environment="jupyter",
     environment_kwargs={
         "sync_to_user_ns": True,
         "sync_from_user_ns": True,
         "sync_vars": ["model", "df"],  # Optional allowlist
     },
-)
 )
 ```
 
